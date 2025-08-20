@@ -1,184 +1,179 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" class="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>מרקט מבואות — טרי, קרוב ומשתלם</title>
-  <meta name="description" content="מרקט מבואות: פירות וירקות טריים, יינות בוטיק, בשרים בכשרויות מהדרין, מבצעים מיוחדים ועוד.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מכולת מבואות יריחו — השכונתית שלכם</title>
+  <meta name="description" content="מכולת מבואות יריחו — מבואית. מבחר ענק של מצרכים, חלב, מאפים, חטיפים, שתייה ופירות־ירקות. חיפוש לפי שם או ברקוד. גלריית תמונות, פרטי קשר ומפה." />
+  <meta property="og:title" content="מכולת מבואות יריחו" />
+  <meta property="og:description" content="מכולת שכונתית עם שירות חם ומחירים הוגנים. חיפוש מהיר לפי שם או ברקוד." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="he_IL" />
+  <link rel="icon" href="assets/logo.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "GroceryStore",
+    "name": "מכולת מבואות יריחו",
+    "image": "https://marketmevoot.avielpc.com/assets/logo.png",
+    "telephone": "+972-58-613-0140",
+    "email": "marketmevoot@gmail.com",
+    "url": "https://marketmevoot.avielpc.com"
+  }
+  </script>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="topnav">
-    <div class="brand">
-      <span class="logo">🍎</span>
-      <span>מרקט מבואות</span>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="מכולת מבואות יריחו">
+        <img src="assets/logo.png" alt="לוגו מכולת מבואות יריחו" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">מכולת מבואות יריחו</span>
+          <span class="brand-tag muted">מבואית.</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#hero" class="active">בית</a></li>
+          <li><a href="#catalog">מוצרים</a></li>
+          <li><a href="#gallery">גלרייה</a></li>
+          <li><a href="#contact">צור קשר</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn" href="tel:0586130140" aria-label="התקשר">☎️ התקשר</a>
+        <a class="btn primary" href="https://wa.me/972586130140" target="_blank" rel="noopener" aria-label="WhatsApp">💬 WhatsApp</a>
+        <button id="themeToggle" class="icon-btn" aria-label="החלפת מצב בהיר/כהה">🌓</button>
+        <button id="mobileMenuBtn" class="icon-btn mobile-toggle" aria-label="פתיחת תפריט">☰</button>
+      </div>
     </div>
-    <div class="links">
-      <a href="#about">אודות</a>
-      <a href="#highlights">מה חדש</a>
-      <a href="#gallery">גלריה</a>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#hero">בית</a>
+      <a href="#catalog">מוצרים</a>
+      <a href="#gallery">גלרייה</a>
       <a href="#contact">צור קשר</a>
     </div>
-  </nav>
-
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-inner">
-      <h1 class="animate-fade">מרקט מבואות</h1>
-      <p class="tagline animate-fade">טרי, קרוב ומשתלם — בכל יום</p>
-      <p class="sub animate-fade">הבית של השכונה לפירות וירקות טריים, יינות בוטיק, בשרים מהדרין, מאפים חמים ועוד.</p>
-      <a href="#contact" class="cta-btn animate-bounce">בואו נגיד שלום</a>
-    </div>
-    <img class="hero-photo" src="assets/img1.jpeg" alt="תמונה מהמכולת" />
   </header>
 
-  <!-- ABOUT -->
-  <section class="section fade-in" id="about">
-    <h2>מי אנחנו</h2>
-    <p>
-      במרקט מבואות אנחנו מאמינים שהקניות לשולחן המשפחה צריכות להיות <strong>טריות</strong>, <strong>נגישות</strong> ו<strong>משתלמות</strong>.
-      מחוגרים לשטחי הגידול ולספקים איכותיים, כדי להביא לכם את הכי טוב — כל יום.
-    </p>
-    <ul class="ticks">
-      <li>יחס אישי וחיוך — אנחנו שכנים לפני הכול</li>
-      <li>מלאי מתחדש תדיר, כולל מוצרים ייחודיים שלא תמצאו בכל מקום</li>
-      <li>שקיפות במחיר ואיכות ללא פשרות</li>
-    </ul>
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="title-xl" data-animate>ברוכים הבאים למכולת מבואות יריחו</h1>
+        <p class="lead" data-animate>המכולת השכונתית — טריות, שירות וחיוך. מצרכי יסוד, מאפים, חלב, חטיפים ומשקאות.</p>
+        <div class="cta-row" data-animate>
+          <a href="#catalog" class="btn primary">גלו מוצרים</a>
+          <a href="#contact" class="btn">צור קשר</a>
+        </div>
+        <p class="muted small" data-animate>חיפוש מהיר לפי שם או ברקוד · עדכונים שוטפים</p>
+      </div>
+
+      <div class="screen" data-animate aria-label="כרטיסי מוצרים">
+        <div class="screen-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        </div>
+        <div class="screen-body">
+          <div class="hero-cards">
+            <div class="p-card">
+              <div class="p-img" data-emoji="🥛"></div>
+              <div class="p-info"><b>חלב תנובה</b><span>מצרכי חלב</span></div>
+            </div>
+            <div class="p-card">
+              <div class="p-img" data-emoji="🥖"></div>
+              <div class="p-info"><b>לחם טרי</b><span>מאפים ולחמים</span></div>
+            </div>
+            <div class="p-card">
+              <div class="p-img" data-emoji="🥤"></div>
+              <div class="p-info"><b>משקאות</b><span>קולה, מיצים ועוד</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
-  <!-- HIGHLIGHTS -->
-  <section class="section fade-in" id="highlights">
-    <h2>מה חדש אצלנו</h2>
-    <div class="value-grid">
-      <div class="value-card">
-        <h3>פירות וירקות טריים</h3>
-        <p>אספקה טרייה <strong>כל שני וחמישי</strong> — הנראות משתנה לפי עונה ויבול.</p>
+  <!-- Catalog -->
+  <section id="catalog">
+    <div class="container">
+      <h2 class="section-title" data-animate>קטלוג מוצרים</h2>
+      <p class="section-sub" data-animate>אין הזמנות באתר — הצגה בלבד. אפשר לחפש לפי שם מוצר או ברקוד.</p>
+
+      <div class="filters card" data-animate>
+        <div class="filters-row">
+          <input id="searchInput" type="search" placeholder="חיפוש: שם מוצר או ברקוד…" aria-label="חיפוש מוצרים" />
+          <select id="categorySelect" aria-label="סינון לפי קטגוריה">
+            <option value="__all">כל הקטגוריות</option>
+          </select>
+          <select id="sortSelect" aria-label="מיון">
+            <option value="name">מיון: א-ת</option>
+            <option value="priceAsc">מחיר — נמוך לגבוה</option>
+            <option value="priceDesc">מחיר — גבוה לנמוך</option>
+          </select>
+        </div>
+        <div class="muted small" id="countInfo">0 מוצרים</div>
       </div>
-      <div class="value-card">
-        <h3>יינות בוטיק</h3>
-        <p>מגוון מיוחד של יקבים ישראליים ובינלאומיים — לבחירה חכמה ומתאימה לכל ארוחה.</p>
-      </div>
-      <div class="value-card">
-        <h3>תותים טריים</h3>
-        <p>אדומים, מתוקים ושווים לכל כיס — כל עוד העונה מאפשרת.</p>
-      </div>
-      <div class="value-card">
-        <h3>בשרים מהדרין</h3>
-        <p>מבחר נתחים בכשרויות מהודרות — זמינות משתנה לפי היצע.</p>
-      </div>
-      <div class="value-card">
-        <h3>מבצעי חג</h3>
-        <p>מבצעים משתלמים לקראת פסח וחגים נוספים — שווה לעקוב.</p>
-      </div>
-      <div class="value-card">
-        <h3>ימי שוק</h3>
-        <p>יום שוק נוסף — הכרזות בעמוד ובחנות. מגיעים?</p>
-      </div>
-      <div class="value-card">
-        <h3>טמפו מתארחים</h3>
-        <p>חברת טמפו מגיעה אלינו — טעימות ומבצעים מיוחדים.</p>
-      </div>
-      <div class="value-card">
-        <h3>חלות שישי</h3>
-        <p>חלות טריות וחמות <strong>בכל יום שישי</strong>.</p>
-      </div>
-      <div class="value-card">
-        <h3>גלידות שטראוס</h3>
-        <p>מגוון מפנק וטעים לכל המשפחה.</p>
+
+      <div id="productsGrid" class="grid products-grid"><!-- נבנה מה-JS --></div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-animate>גלריית החנות</h2>
+      <p class="section-sub" data-animate>הצצה קטנה למדפים שלנו 🙂</p>
+
+      <div class="grid gallery-grid">
+        <!-- עד 12 תמונות. אם יש יותר/פחות זה בסדר -->
+        <img src="assets/img1.jpeg" alt="תמונה מהחנות 1" loading="lazy" class="card" data-animate />
+        <img src="assets/img2.jpeg" alt="תמונה מהחנות 2" loading="lazy" class="card" data-animate />
+        <img src="assets/img3.jpeg" alt="תמונה מהחנות 3" loading="lazy" class="card" data-animate />
+        <img src="assets/img4.jpeg" alt="תמונה מהחנות 4" loading="lazy" class="card" data-animate />
+        <img src="assets/img5.jpeg" alt="תמונה מהחנות 5" loading="lazy" class="card" data-animate />
+        <img src="assets/img6.jpeg" alt="תמונה מהחנות 6" loading="lazy" class="card" data-animate />
       </div>
     </div>
   </section>
 
-  <!-- GALLERY -->
-  <section class="section fade-in" id="gallery">
-    <h2>גלריה</h2>
-    <div class="portfolio-grid">
-      
-      <figure class="shot">
-        <img src="assets/img1.jpeg" alt="פירות וירקות טריים כל שני וחמישי" loading="lazy"/>
-        <figcaption>פירות וירקות טריים כל שני וחמישי</figcaption>
-      </figure>
-    
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title" data-animate>צור קשר</h2>
+      <p class="section-sub" data-animate>נשמח לראותכם בחנות! לשאלות וזמינות מוצרים — דברו איתנו.</p>
 
-      <figure class="shot">
-        <img src="assets/img2.jpeg" alt="יינות בוטיק מיוחדים עם מגוון מיוחד שתוכלו למצוא אצלנו" loading="lazy"/>
-        <figcaption>יינות בוטיק מיוחדים עם מגוון מיוחד שתוכלו למצוא אצלנו</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img3.jpeg" alt="תותים טריים מאוד, במחיר שווה לכל כיס" loading="lazy"/>
-        <figcaption>תותים טריים מאוד, במחיר שווה לכל כיס</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img4.jpeg" alt="כל מיני בשרים בכשרויות מהדרין" loading="lazy"/>
-        <figcaption>כל מיני בשרים בכשרויות מהדרין</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img5.jpeg" alt="מבצעים לקראת פסח" loading="lazy"/>
-        <figcaption>מבצעים לקראת פסח</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img6.jpeg" alt="עוד יום שוק" loading="lazy"/>
-        <figcaption>עוד יום שוק</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img7.jpeg" alt="חברת טמפו – אחת מהחברות הגדולות בארץ מגיעה אלינו" loading="lazy"/>
-        <figcaption>חברת טמפו – אחת מהחברות הגדולות בארץ מגיעה אלינו</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img8.jpeg" alt="חלות טריות בימי שישי" loading="lazy"/>
-        <figcaption>חלות טריות בימי שישי</figcaption>
-      </figure>
-    
-
-      <figure class="shot">
-        <img src="assets/img9.jpeg" alt="גלידות שטראוס במגוון מפנק וטעים" loading="lazy"/>
-        <figcaption>גלידות שטראוס במגוון מפנק וטעים</figcaption>
-      </figure>
-    
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="section fade-in" id="contact">
-    <h2>צור קשר</h2>
-    <form id="contactForm" class="contact-form">
-      <div class="row">
-        <input id="name" type="text" placeholder="שם מלא" required />
-        <input id="phone" type="tel" placeholder="טלפון" required />
+      <div class="contact-rows">
+        <div class="card contact-card" data-animate>
+          <div class="contact-line"><b>טלפון:</b> <a href="tel:0586130140">058-613-0140</a></div>
+          <div class="contact-line"><b>WhatsApp:</b> <a href="https://wa.me/972586130140" target="_blank" rel="noopener">לחצו לשיחה</a></div>
+          <div class="contact-line"><b>מייל:</b> <a href="mailto:marketmevoot@gmail.com">marketmevoot@gmail.com</a></div>
+          <!-- אפשר להוסיף כתובת כשיהיה -->
+        </div>
+        <form id="contactForm" class="contact card" data-animate>
+          <input type="text" name="name" placeholder="שם מלא *" required />
+          <input type="tel" name="phone" placeholder="טלפון *" required />
+          <textarea name="message" placeholder="הודעה (לא להזמנה, לשאלה בלבד) *" rows="4" required></textarea>
+          <div class="contact-actions">
+            <a id="sendWA" class="btn primary" href="#">שליחה ב־WhatsApp</a>
+            <a id="sendMail" class="btn" href="#">שליחה במייל</a>
+          </div>
+        </form>
       </div>
-      <input id="email" type="email" placeholder="אימייל (לא חובה)" />
-      <textarea id="message" placeholder="מה תרצו להזמין או לשאול?" required></textarea>
-      <button type="submit">שליחה</button>
-      <p class="note">שליחה תפתח הודעה מוכנה ב־WhatsApp או במייל.</p>
-    </form>
-
-    <div class="contact-buttons">
-      <button onclick="openWhatsApp()">WhatsApp</button>
-      <button onclick="callPhone()">טלפון</button>
-      <button onclick="sendEmail()">אימייל</button>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
-    <p>© 2025 מרקט מבואות — כל הזכויות שמורות</p>
+    <div class="container footer-row">
+      <div>© <span id="year"></span> מכולת מבואות יריחו — כל הזכויות שמורות.</div>
+      <div class="muted">אתר סטטי מהיר · מצב בהיר/כהה · חיפוש ומיון מוצרים</div>
+    </div>
   </footer>
-
-  <button class="to-top" id="toTop" aria-label="חזרה לראש הדף">↑</button>
 
   <script src="script.js"></script>
 </body>
